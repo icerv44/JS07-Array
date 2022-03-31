@@ -10,13 +10,13 @@
 let sum = 0;
 let arr = [];
 
+arr[0] = 0;
+arr[1] = 1;
+arr[2] = 1;
 let calFibo = (num) => {
-  for (let i = 0; i <= num; i++) {
-    if (i === 0) {
-      sum = 0;
-    } else {
-      sum = sum + i;
-    }
+  for (let i = 3; i <= num; i++) {
+    //arr[i] = Number(arr[i - 1] + 1);
+    arr[i] = Number(arr[i - 1]) + Number(arr[i - 2]);
     arr.push(sum);
   }
 };
