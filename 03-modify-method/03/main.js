@@ -1,0 +1,17 @@
+let animals = ["Dog", "Cat", "Rat"];
+console.log(animals);
+animals.push("Fish");
+console.log(animals);
+animals.unshift("Horse");
+console.log(animals);
+animals.splice(animals.length, 0, "Griraffe", "Snake");
+console.log(animals);
+//delete animals[animals.indexOf("Horse", 0)];
+animals.splice(animals.indexOf("Horse", 0), 1);
+console.log(animals);
+//delete animals[animals.indexOf("Snake", 0)];
+animals.splice(animals.indexOf("Snake", 0), 1);
+console.log(animals);
+//delete animals[animals.indexOf("Dog", 0)];
+animals.splice(animals.indexOf("Dog", 0), 1);
+console.log(animals);
